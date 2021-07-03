@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>navbar</title>
+    </head>
+
+    <body>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="mobile-bar" onclick="toggleMobileMenu();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <script>
+            function toggleMobileMenu() {
+                document.querySelector('#menu').classList.toggle('active')
+                document.querySelector('.mobile-bar').classList.toggle('active')
+
+            }
+        </script>
+    </body>
+
+</html>
