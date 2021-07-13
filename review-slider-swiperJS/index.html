@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <title>review slider with swiperJS</title>
+    </head>
+
+    <body>
+
+        <section>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <img src="https://img.icons8.com/ios/50/000000/quote-right.png" class="quote" />
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repudiandae possimus
+                                    hic
+                                    ad
+                                    dolor doloremque porro rerum assumenda animi? Voluptatibus.
+                                </p>
+                                <div class="details">
+                                    <div class="imgBox">
+                                        <img src="/imgs/fireforce004.jpg" alt="">
+                                    </div>
+                                    <h3>Someone Famous <br> <Span>Director</Span> </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <img src="https://img.icons8.com/ios/50/000000/quote-right.png" class="quote" />
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repudiandae possimus
+                                    hic
+                                    ad
+                                    dolor doloremque porro rerum assumenda animi? Voluptatibus.
+                                </p>
+                                <div class="details">
+                                    <div class="imgBox">
+                                        <img src="/imgs/khpic05.jpg" alt="">
+                                    </div>
+                                    <h3>Someone Famous <br> <Span>Director</Span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <img src="https://img.icons8.com/ios/50/000000/quote-right.png" class="quote" />
+                            <div class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repudiandae possimus
+                                    hic
+                                    ad
+                                    dolor doloremque porro rerum assumenda animi? Voluptatibus.
+                                </p>
+                                <div class="details">
+                                    <div class="imgBox">
+                                        <img src="/imgs/khpic37.jpg" alt="">
+                                    </div>
+                                    <h3>Someone Famous <br> <Span>Director</Span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".swiper-container", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2,
+                    slideShadows: true,
+                },
+                // pagination: {
+                //     el: ".swiper-pagination",
+                // },
+                //or take out pagnation above, & have a for ever loop of the same testimonials
+                loop: true,
+            });
+        </script>
+
+    </body>
+
+</html>
