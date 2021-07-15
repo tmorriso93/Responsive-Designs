@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Testiminial</title>
+    </head>
+
+    <body>
+        <div class="hero">
+            <h1>Customer Reviews</h1>
+            <div class="review-box">
+                <div id="slide">
+                    <div class="card">
+                        <div class="profile">
+                            <img src="/imgs/draw10.jpg" alt="">
+                            <div>
+                                <h3>Riley Smoke</h3>
+                                <p>Web Designer</p>
+                            </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis repudiandae distinctio
+                            quam sunt quos, voluptate deleniti itaque eius corrupti rem nam, hic accusamus laboriosam
+                            dolores</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="/imgs/draw001.png" alt="">
+                            <div>
+                                <h3>Soul king</h3>
+                                <p>Graphic Designer</p>
+                            </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis repudiandae distinctio
+                            quam sunt quos, voluptate deleniti itaque eius corrupti rem nam, hic accusamus laboriosam
+                            dolores</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="/imgs/draw94.jpg" alt="">
+                            <div>
+                                <h3>Star Girl</h3>
+                                <p>Back End Engineer</p>
+                            </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis repudiandae distinctio
+                            quam sunt quos, voluptate deleniti itaque eius corrupti rem nam, hic accusamus laboriosam
+                            dolores</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="/imgs/draw95.jpg" alt="">
+                            <div>
+                                <h3>Luna Astro</h3>
+                                <p>Full Stack Developer</p>
+                            </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis repudiandae distinctio
+                            quam sunt quos, voluptate deleniti itaque eius corrupti rem nam, hic accusamus laboriosam
+                            dolores</p>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <img src="https://img.icons8.com/material-outlined/24/FFFFFF/circled-up-2.png" id="upArrow" />
+                    <img src="https://img.icons8.com/material-outlined/24/FFFFFF/low-importance.png" id="downArrow" />
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var slide = document.getElementById("slide");
+            var upArrow = document.getElementById("upArrow");
+            var downArrow = document.getElementById("downArrow");
+
+            let x = 0;
+
+            downArrow.onclick = function () {
+                if (x > "-900")
+                    x = x - 300;
+                slide.style.top = x + "px";
+            }
+
+            upArrow.onclick = function () {
+                if (x < 0)
+                    x = x + 300;
+                slide.style.top = x + "px";
+            }
+
+
+        </script>
+    </body>
+
+</html>
