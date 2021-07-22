@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  body {
+    font-family: "Times New Roman", Times, serif;
+
+    .content {
+      height: 70vh;
+    }
+    footer {
+      background-color: #141414;
+      color: white;
+      width: 100%;
+      margin: auto;
+
+      .newsletter {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+
+        form {
+          input [type="text"] {
+            padding: 8px 10px;
+            background-color: #141414;
+            border: 1px solid #ccc;
+            width: 50%;
+            outline: none;
+            color: white;
+          }
+
+          .btn {
+            color: black;
+            background-color: white;
+            outline: none;
+            border: none;
+            padding: 9px 25px;
+            border-radius: 14px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 10px;
+          }
+
+          .btn:hover {
+            background-color: #d6d6d6;
+          }
+        }
+
+        p {
+          margin-left: 15px;
+          width: 100%;
+        }
+      }
+
+      hr {
+        opacity: 0.3;
+      }
+
+      p {
+        opacity: 0.6;
+        margin-top: 10px;
+      }
+
+      .main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 2rem;
+
+        li {
+          list-style: none;
+          margin-bottom: 10px;
+          a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.6;
+          }
+
+          a:hover {
+            opacity: 1;
+            text-decoration: underline;
+          }
+
+          i {
+            margin-right: 20px;
+          }
+        }
+
+        h2 {
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      footer {
+        .newsletter {
+          display: flex;
+          flex-direction: column;
+          form {
+            margin-top: 15px;
+          }
+          p {
+            margin: 0 10px;
+          }
+        }
+        .main {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          //   align-items: center;
+          h2 {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
