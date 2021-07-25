@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    background-color: #d8dbdb;
+    font-size: 19px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2%;
+    color: #565859;
+
+    #wrapper {
+      background: #f6faff;
+
+      header {
+        width: 98%;
+
+        #logo {
+          max-width: 150px;
+          margin: 2% 0 0 5%;
+          float: left;
+        }
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      #callout {
+        float: right;
+        margin: 3% 3% 2% 0;
+        .social {
+          display: flex;
+          float: right;
+          margin-top: 8%;
+
+          li {
+            list-style: none;
+            text-decoration: none;
+            margin-right: 10px;
+            display: inline-block;
+            width: 25px;
+
+            .fa-facebook-square {
+              color: rgb(50, 84, 235);
+            }
+            .fa-twitter-square {
+              color: rgb(34, 145, 236);
+            }
+            .fa-google-plus-square {
+              color: rgb(35, 146, 61);
+            }
+            .fa-youtube-square {
+              color: #df341d;
+            }
+          }
+        }
+      }
+
+      .one-col {
+        padding: 2%;
+        h1 {
+          letter-spacing: 1%;
+        }
+        p {
+          text-align: justify;
+        }
+        .button-holder {
+          float: right;
+          margin: 2% 2% 4% 0;
+          .btn {
+            float: right;
+            background: #303840;
+            color: #f6faff;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 8px 12px;
+            border-radius: 8px;
+            letter-spacing: 1px;
+          }
+          .btn:hover {
+            background: #58585a;
+          }
+        }
+      }
+
+      .line {
+        clear: both;
+        height: 2px;
+        background-color: #e3e9e9;
+        margin: 4% auto;
+        width: 95%;
+      }
+
+      .two-col {
+        float: left;
+        width: 45%;
+        padding: 2%;
+
+        img {
+          min-height: 325px;
+        }
+
+        a {
+          color: #607cc3;
+          text-decoration: none;
+        }
+
+        h2 {
+          margin-bottom: 3px;
+        }
+      }
+
+      .contact {
+        text-align: center;
+        padding-bottom: 3%;
+      }
+
+      .banner {
+        margin-bottom: 3%;
+      }
+
+      @media screen and (max-width: 700px) {
+        .two-col {
+          width: 97%;
+        }
+      }
+    }
+  }
+}
