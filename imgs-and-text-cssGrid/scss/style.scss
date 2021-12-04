@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .content {
+        margin: 0 auto;
+        max-width: 320px;
+        display: block;
+
+        p {
+          margin-block-start: -2.5rem;
+          margin-inline-start: 1rem;
+          padding: 1rem;
+          color: #000;
+          background: rgba(255, 255, 255, 0.5);
+          position: relative;
+        }
+      }
+    }
+  }
+}
